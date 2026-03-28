@@ -124,22 +124,65 @@ python src/predict.py
 ## Sample Output
 
 ```
-=============================================
-   SMART FOOD DEMAND PREDICTION
-=============================================
-Day: Monday
-Weather: Clear
-Exam: No
-Previous Attendance: 280
+============================================================
+   SMART FOOD DEMAND PREDICTION SYSTEM - PREDICTION
+============================================================
 
-Prediction Result
----------------------------------------------
-Expected Students: 310
+[1/3] Enter meal demand details
+------------------------------------------------------------
+
+Select Day:
+  1. Monday
+  2. Tuesday
+  3. Wednesday
+  4. Thursday
+  5. Friday
+  6. Saturday
+  7. Sunday
+Enter day number (1-7): 2
+Enter day of month (1-31): 18
+Exam Day? (1=Yes, 0=No): 1
+Holiday? (1=Yes, 0=No): 0
+Special Event? (1=Yes, 0=No): 0
+
+Weather:
+  0. Clear
+  1. Rainy
+Enter weather option (0-1): 0
+
+Meal Type:
+  0. Breakfast
+  1. Lunch
+  2. Dinner
+Enter meal type number (0-2): 1
+Enter previous day attendance: 295
+
+[2/3] Preparing input data...
+------------------------------------------------------------
+Input data prepared successfully.
+
+[3/3] Predicting attendance...
+------------------------------------------------------------
+
+============================================================
+                     PREDICTION RESULT
+============================================================
+Day                 : Tuesday
+Day of Month        : 18
+Weekend             : No
+Exam Day            : Yes
+Holiday             : No
+Special Event       : No
+Weather             : Clear
+Meal Type           : Lunch
+Previous Attendance : 295
+------------------------------------------------------------
+Expected Students   : 333
 
 Recommendation
----------------------------------------------
+------------------------------------------------------------
 Prepare HIGH quantity of food
-=============================================
+============================================================
 ```
 
 ---
